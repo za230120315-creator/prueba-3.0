@@ -1,0 +1,131 @@
+/* ======== ESTILOS GENERALES PARA TODO EL PROYECTO ======== */
+
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #90b3f5, #556d97);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #333;
+}
+
+/* Títulos principales */
+h1, h2, h3 {
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+/* Contenedores principales tipo tarjeta */
+.container, .card, .box {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 30px 40px;
+  max-width: 500px;
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* Inputs y selects */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.4);
+  outline: none;
+}
+
+/* Botones */
+button, input[type="submit"] {
+  width: 100%;
+  background-color: #2a5298;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #1e3c72;
+  transform: translateY(-2px);
+}
+
+/* Tablas (para tu CRUD) */
+table {
+  width: 95%;
+  border-collapse: collapse;
+  background: #fff;
+  margin: 30px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background: #2a5298;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6fa;
+}
+
+/* Links */
+a {
+  color: #d4edda;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1e3c72;
+  text-decoration: underline;
+}
+
+/* Mensajes o alertas */
+.message, .alert {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
